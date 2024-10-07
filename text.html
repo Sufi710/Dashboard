@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="user.jpg" alt="Profile Image">
+                </div>
+                <div class="username">Hi, Sufiyan!</div>
+            </div>
+            <ul class="menu">
+                <li><a href="#" data-spec="Temperature">Temperature</a></li>
+                <li><a href="#" data-spec="HeartRate">HeartRate/ SPo2</a></li>
+                <li><a href="#" data-spec="Weight">Height/ Weight</a></li>
+                <li><a href="#" data-spec="Glucose">Glucose level</a></li>
+                <li><a href="#" data-spec="BloodPressure">Blood pressure</a></li>
+                
+            </ul>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <h2>Charak Center</h2>
+            </header>
+            <div class="content">
+                <div class="results-container">
+                    <div class="result-box" data-spec="Temperature">
+                        <div class="led-indicator"></div>
+                        <div class="spec-name">Temperature</div>
+                        <div class="spec-value"> </div>
+                    </div>
+                    <div class="result-box" data-spec="BloodPressure">
+                        <div class="led-indicator"></div>
+                        <div class="spec-name">BloodPressure</div>
+                        <div class="spec-value"> </div>
+                    </div>
+                    <div class="result-box" data-spec="Weight">
+                        <div class="led-indicator"></div>
+                        <div class="spec-name">Weight</div>
+                        <div class="spec-value"> </div>
+                    </div>
+                    <div class="result-box" data-spec="Height">
+                        <div class="led-indicator"></div>
+                        <div class="spec-name">Height</div>
+                        <div class="spec-value"> </div>
+                    </div>
+                    <div class="result-box" data-spec="SPO2">
+                        <div class="led-indicator"></div>
+                        <div class="spec-name">SPO2</div>
+                        <div class="spec-value"> </div>
+                    </div>
+                    <div class="result-box" data-spec="HeartRate">
+                        <div class="led-indicator"></div>
+                        <div class="spec-name">HeartRate</div>
+                        <div class="spec-value"> </div>
+                    </div>
+                    <div class="result-box" data-spec="Glucose">
+                        <div class="led-indicator"></div>
+                        <div class="spec-name">Glucose level</div>
+                        <div class="spec-value"> </div>
+                    </div>
+                    <div class="result-box" data-spec="BMI">
+                        <div class="led-indicator"></div>
+                        <div class="spec-name">BMI</div>
+                        <div class="spec-value"> </div>
+                    </div>
+                </div>
+                <div class="center-image">
+                    <img src="Body.jpg" alt="Human Anatomy Image">
+                </div>
+            </div>
+            <div id="loadingMessage"></div>
+        </div>
+    </div>
+
+    <div class="popup-container" id="popupContainer" style="display: none;">
+        <div class="popup">
+            <div id="popupMessage"></div>
+            <span class="close" id="closePopup">&times;</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
